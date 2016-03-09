@@ -18,7 +18,7 @@ public class UserController {
     private static  final Logger logger =Logger.getLogger(UserController.class);
     @Resource
     private UserService userService;
-    @RequestMapping("showUser")
+    @RequestMapping("/showUser")
     public String showUser(){
         User user =userService.getUserById("1");
         logger.info(JSON.toJSONString(user));
