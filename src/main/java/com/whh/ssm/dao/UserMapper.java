@@ -1,7 +1,9 @@
 package com.whh.ssm.dao;
 
 import com.whh.ssm.model.User;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UserMapper {
     int deleteByPrimaryKey(String id);
 
